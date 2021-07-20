@@ -13,6 +13,15 @@ console.log(lista_cognomi);
 // 3. stampa la lista ordinata alfabeticamente
 
 lista_cognomi.sort();
-console.log(lista_cognomi) ;
+console.log(lista_cognomi);
 
 // 4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
+
+
+var i = 0;
+while (i < lista_cognomi.length) {
+    
+    console.log(lista_cognomi.indexOf(lista_cognomi[i]));
+    document.getElementById("listaCognomi").innerHTML += "<li>" + lista_cognomi[i] + "</li>";
+    i++;
+}
